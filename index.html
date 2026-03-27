@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yassin Ahmed | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home" style="color: var(--primary-blue); font-size: 1.5rem;">
+                <span style="margin-right: 8px;">&lt;/&gt;</span>
+                Yassin Ahmed
+            </a>
+            
+            <div class="d-flex align-items-center order-lg-3">
+                <button class="theme-toggle" id="theme-btn">
+                    <i data-lucide="moon" id="theme-icon"></i>
+                </button>
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i data-lucide="menu" style="color: var(--text);"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center order-lg-2" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-glow"></div>
+            <div class="container" data-aos="fade-up">
+                <p class="hero-welcome">Welcome to my portfolio</p>
+                <h1 class="hero-name">Yassin Ahmed</h1>
+                <h2 class="hero-role">Frontend Developer</h2>
+                <p class="hero-desc mx-auto">
+                    I build modern and responsive web applications with clean code and
+                    exceptional user experiences. Focused on performance and visual excellence.
+                </p>
+                <a href="#projects" class="hero-btn">
+                    View Projects <i data-lucide="chevron-down" style="width: 18px;"></i>
+                </a>
+            </div>
+            <div class="scroll-arrow" id="scroll-btn">
+                <i data-lucide="chevron-down" style="width: 30px; height: 30px;"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about-section pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline mx-auto"></div>
+                </div>
+                
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-6">
+                        <div class="about-card main-card h-100 p-4 p-md-5">
+                            <h3 class="card-title-main mb-4">Frontend Developer & UI/UX Enthusiast</h3>
+                            <p class="about-text mb-4">
+                                I'm <span class="text-primary-blue fw-600">Yassin Ahmed</span>, a passionate Frontend Developer with a
+                                keen eye for design and a commitment to creating seamless digital experiences. With expertise in
+                                modern web technologies, I transform ideas into elegant, responsive, and performant applications.
+                            </p>
+                            <p class="about-text mb-0">
+                                My journey in web development has equipped me with a strong foundation in
+                                <span class="text-primary-blue">HTML, CSS, and JavaScript</span>, along with advanced proficiency in
+                                <span class="text-primary-blue">React</span> and modern CSS frameworks like
+                                <span class="text-primary-blue">Bootstrap</span> and <span class="text-primary-blue">Tailwind CSS</span>.
+                                I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex flex-column gap-4 h-100">
+                            <div class="about-card feature-card p-4 d-flex align-items-center gap-4 flex-grow-1">
+                                <div class="feature-icon-box">
+                                    <i data-lucide="code"></i>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title mb-1">Clean Code</h4>
+                                    <p class="feature-desc mb-0">Writing maintainable, scalable, and well-documented code following best practices</p>
+                                </div>
+                            </div>
+                            <div class="about-card feature-card p-4 d-flex align-items-center gap-4 flex-grow-1">
+                                <div class="feature-icon-box">
+                                    <i data-lucide="palette"></i>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title mb-1">Modern Design</h4>
+                                    <p class="feature-desc mb-0">Creating beautiful, intuitive interfaces with attention to every detail</p>
+                                </div>
+                            </div>
+                            <div class="about-card feature-card p-4 d-flex align-items-center gap-4 flex-grow-1">
+                                <div class="feature-icon-box">
+                                    <i data-lucide="zap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="feature-title mb-1">Performance</h4>
+                                    <p class="feature-desc mb-0">Building fast, optimized applications that deliver exceptional user experiences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-5 col-lg-3">
+                        <div class="about-card stats-card p-4 text-center">
+                            <div class="stats-icon mb-3">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <h3 class="stats-value mb-1">+2</h3>
+                            <p class="stats-label mb-0">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3">
+                        <div class="about-card stats-card p-4 text-center">
+                            <div class="stats-icon mb-3">
+                                <i data-lucide="briefcase"></i>
+                            </div>
+                            <h3 class="stats-value mb-1">20+</h3>
+                            <p class="stats-label mb-0">Projects Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section id="skills" class="skills-section pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="title-underline mx-auto"></div>
+                </div>
+
+                <div class="row g-4 justify-content-center mb-5">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="skill-card text-center p-4">
+                            <div class="skill-icon-box mb-3 mx-auto">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <h4 class="skill-name mb-0">HTML</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="skill-card text-center p-4">
+                            <div class="skill-icon-box mb-3 mx-auto">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <h4 class="skill-name mb-0">CSS</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="skill-card text-center p-4">
+                            <div class="skill-icon-box mb-3 mx-auto">
+                                <i data-lucide="zap"></i>
+                            </div>
+                            <h4 class="skill-name mb-0">JavaScript</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="skill-card text-center p-4">
+                            <div class="skill-icon-box mb-3 mx-auto">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <h4 class="skill-name mb-0">React</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="skill-card text-center p-4">
+                            <div class="skill-icon-box mb-3 mx-auto">
+                                <i data-lucide="package"></i>
+                            </div>
+                            <h4 class="skill-name mb-0">Bootstrap</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <div class="skill-card text-center p-4">
+                            <div class="skill-icon-box mb-3 mx-auto">
+                                <i data-lucide="paint-bucket"></i>
+                            </div>
+                            <h4 class="skill-name mb-0">Tailwind CSS</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-cloud-wrapper text-center">
+                    <h4 class="tech-cloud-title mb-4">Technologies I Work With</h4>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <span class="tech-pill">HTML</span>
+                        <span class="tech-pill">CSS</span>
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Bootstrap</span>
+                        <span class="tech-pill">Tailwind CSS</span>
+                        <span class="tech-pill">Git</span>
+                        <span class="tech-pill">GitHub</span>
+                    </div>
+                </div>
+            </div>
+        <section id="projects" class="projects-section pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p class="section-subtitle-main mt-3">Here are some of my recent projects that showcase my skills and expertise</p>
+                </div>
+
+                <div class="filter-controls d-flex justify-content-center gap-3 mb-5">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                </div>
+
+                <div class="row g-4 project-grid" id="project-container">
+                    <div class="col-lg-4 col-md-6 project-item" data-category="react">
+                        <div class="project-card h-100">
+                            <div class="project-img-wrapper">
+                                <img src="Egypt-horizon-pic.png" alt="Tourism Platform" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="https://yassin-ahmed54.github.io/Egypt-horizon/" target="_blank" class="overlay-icon" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/Yassin-Ahmed54/Egypt-horizon" target="_blank" class="overlay-icon" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content p-4">
+                                <h4 class="project-title mb-2">Tourism Platform</h4>
+                                <p class="project-desc mb-4">A responsive tourism platform with data visualization and real-time booking updates.</p>
+                                <div class="project-tech d-flex flex-wrap align-items-center gap-2">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <a href="https://yassin-ahmed54.github.io/Egypt-horizon/" target="_blank" class="live-link ms-auto">Visit Site <i data-lucide="external-link" style="width: 14px;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 project-item" data-category="javascript">
+                        <div class="project-card h-100">
+                            <div class="project-img-wrapper">
+                                <img src="Appexy.png" alt="E-Commerce Platform" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="https://yassin-ahmed54.github.io/Appexy-tailwind/" target="_blank" class="overlay-icon" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/Yassin-Ahmed54/Appexy-tailwind" target="_blank" class="overlay-icon" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content p-4">
+                                <h4 class="project-title mb-2">Appexy platform</h4>
+                                <p class="project-desc mb-4">All-in-one activity management platform with real-time tracking and collaboration.</p>
+                                <div class="project-tech d-flex flex-wrap align-items-center gap-2">
+                                    <span class="tech-tag">Tailwind</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <a href="https://yassin-ahmed54.github.io/Appexy-tailwind/" target="_blank" class="live-link ms-auto">Visit Site <i data-lucide="external-link" style="width: 14px;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 project-item" data-category="javascript">
+                        <div class="project-card h-100">
+                            <div class="project-img-wrapper">
+                                <img src="Blockwear-pic.png" alt="Task Manager Pro" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="https://yassin-ahmed54.github.io/BLOCKWEAR/" target="_blank" class="overlay-icon" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/Yassin-Ahmed54/BLOCKWEAR" target="_blank" class="overlay-icon" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content p-4">
+                                <h4 class="project-title mb-2">Block Wear</h4>
+                                <p class="project-desc mb-4">A fashion showcase website with sleek design and modern style</p>
+                                <div class="project-tech d-flex flex-wrap align-items-center gap-2">
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <a href="https://yassin-ahmed54.github.io/BLOCKWEAR/" target="_blank" class="live-link ms-auto">Visit Site <i data-lucide="external-link" style="width: 14px;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 project-item" data-category="other">
+                        <div class="project-card h-100">
+                            <div class="project-img-wrapper">
+                                <img src="Furni-pic.png" alt="Weather Forecast App" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="https://yassin-ahmed54.github.io/Furni-Furniture/" target="_blank" class="overlay-icon" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/Yassin-Ahmed54/Furni-Furniture" target="_blank" class="overlay-icon" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content p-4">
+                                <h4 class="project-title mb-2">Furniture Platform</h4>
+                                <p class="project-desc mb-4">A real furniture website with stylish design and smooth browsing</p>
+                                <div class="project-tech d-flex flex-wrap align-items-center gap-2">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <a href="https://yassin-ahmed54.github.io/Furni-Furniture/" target="_blank" class="live-link ms-auto">Visit Site <i data-lucide="external-link" style="width: 14px;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 project-item" data-category="other">
+                        <div class="project-card h-100">
+                            <div class="project-img-wrapper">
+                                <img src="Resturant.png" alt="Social Media Dashboard" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="https://yassin-ahmed54.github.io/Resturant-Platform/" target="_blank" class="overlay-icon" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/Yassin-Ahmed54/Resturant-Platform" target="_blank" class="overlay-icon" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content p-4">
+                                <h4 class="project-title mb-2">Resturant Platform</h4>
+                                <p class="project-desc mb-4">Restaurant website with elegant design and seamless ordering experience.</p>
+                                <div class="project-tech d-flex flex-wrap align-items-center gap-2">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <a href="https://yassin-ahmed54.github.io/Resturant-Platform/" target="_blank" class="live-link ms-auto">Visit Site <i data-lucide="external-link" style="width: 14px;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 project-item" data-category="other">
+                        <div class="project-card h-100">
+                            <div class="project-img-wrapper">
+                                <img src="strict-pic.png" alt="Portfolio Website" class="project-img">
+                                <div class="project-overlay">
+                                    <div class="overlay-content">
+                                        <a href="https://yassin-ahmed54.github.io/Strict/" target="_blank" class="overlay-icon" title="View Live"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                        <a href="https://github.com/Yassin-Ahmed54/Strict" target="_blank" class="overlay-icon" title="View Code"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content p-4">
+                                <h4 class="project-title mb-2">Strict Website</h4>
+                                <p class="project-desc mb-4">Strict-style website with a clean and modern design</p>
+                                <div class="project-tech d-flex flex-wrap align-items-center gap-2">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <a href="https://yassin-ahmed54.github.io/Strict/" target="_blank" class="live-link ms-auto">View Site <i data-lucide="external-link" style="width: 14px;"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications-section pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p class="section-subtitle-main mt-3">Professional certifications and courses that validate my technical expertise and commitment to continuous learning.</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                            <div class="cert-img-wrapper">
+                                <img src="Python-Certficate.png" alt="Meta Certification" class="cert-img">
+                                <div class="cert-badge">
+                                    <i data-lucide="award" style="width: 18px; height: 18px;"></i>
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4 class="cert-title">Advanced Python Certification</h4>
+                                <div class="cert-info">
+                                    <i data-lucide="graduation-cap" style="width: 16px; height: 16px;"></i>
+                                    <span>Cisco Networking Academy</span>
+                                </div>
+                                <div class="cert-footer">
+                                    <div class="cert-info mb-0">
+                                        <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                                        <span>March 2026</span>
+                                    </div>
+                                    <span class="view-cert-link">Verified Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                            <div class="cert-img-wrapper">
+                                <img src="JS-certficate.png" alt="AWS Certification" class="cert-img">
+                                <div class="cert-badge">
+                                    <i data-lucide="award" style="width: 18px; height: 18px;"></i>
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4 class="cert-title">JavaScript Certificate</h4>
+                                <div class="cert-info">
+                                    <i data-lucide="graduation-cap" style="width: 16px; height: 16px;"></i>
+                                    <span>Cisco Networking Academy</span>
+                                </div>
+                                <div class="cert-footer">
+                                    <div class="cert-info mb-0">
+                                        <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                                        <span>Jan 2026</span>
+                                    </div>
+                                    <span class="view-cert-link">Verified Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="cert-card">
+                            <div class="cert-img-wrapper">
+                                <img src="English Certficate.jpeg" alt="Google Certification" class="cert-img">
+                                <div class="cert-badge">
+                                    <i data-lucide="award" style="width: 18px; height: 18px;"></i>
+                                </div>
+                            </div>
+                            <div class="cert-content">
+                                <h4 class="cert-title">English Proficiency Certificate</h4>
+                                <div class="cert-info">
+                                    <i data-lucide="graduation-cap" style="width: 16px; height: 16px;"></i>
+                                    <span>EF SET</span>
+                                </div>
+                                <div class="cert-footer">
+                                    <div class="cert-info mb-0">
+                                        <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                                        <span>March 2026</span>
+                                    </div>
+                                    <span class="view-cert-link">Verified Certificate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Services</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p class="section-subtitle-main mt-3">I offer professional frontend development services to bring your ideas to life</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card p-5 text-center h-100">
+                            <div class="service-icon-box mb-4 mx-auto">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <h4 class="service-title mb-3">UI Development</h4>
+                            <p class="service-desc mb-0">Creating beautiful and intuitive user interfaces with modern design principles and best practices.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card p-5 text-center h-100">
+                            <div class="service-icon-box mb-4 mx-auto">
+                                <i data-lucide="tablet-smartphone"></i>
+                            </div>
+                            <h4 class="service-title mb-3">Responsive Design</h4>
+                            <p class="service-desc mb-0">Building fully responsive websites that work seamlessly across all devices and screen sizes.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-card p-5 text-center h-100">
+                            <div class="service-icon-box mb-4 mx-auto">
+                                <i data-lucide="layers"></i>
+                            </div>
+                            <h4 class="service-title mb-3">Web Application Development</h4>
+                            <p class="service-desc mb-0">Developing robust and scalable web applications using cutting-edge technologies and frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <section id="contact" class="contact-section pt-5 pb-5">
+            <div class="container" data-aos="fade-up">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline mx-auto"></div>
+                    <p class="section-subtitle-main mt-3">Have a project in mind or want to collaborate? Feel free to reach out!</p>
+                </div>
+
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="mb-4">
+                                <label for="form-name" class="form-label">Name</label>
+                                <input type="text" name="name" class="form-control" id="form-name" placeholder="Your name">
+                                <p id="name-error" class="error-message d-none mt-1 mb-0">Name is required</p>
+                            </div>
+                            <div class="mb-4">
+                                <label for="form-email" class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" id="form-email" placeholder="your.email@example.com">
+                                <p id="email-error" class="error-message d-none mt-1 mb-0">Please enter a valid email address (missing @)</p>
+                            </div>
+                            <div class="mb-4">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea name="message" class="form-control" id="form-message" rows="5" placeholder="Your message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary-custom w-100 py-3 d-flex align-items-center justify-content-center gap-2">
+                                Send Message <i data-lucide="send"></i>
+                            </button>
+                            <div id="contact-success" class="alert alert-success mt-4 d-none" role="alert">
+                                <i class="fa-solid fa-circle-check me-2"></i> Your message has been sent successfully!
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="contact-info-card p-4">
+                            <h4 class="info-title mb-4">Contact Information</h4>
+                            
+                            <div class="info-item d-flex align-items-center gap-3 mb-4">
+                                <div class="info-icon-box">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div>
+                                    <h6 class="info-label mb-0">Email</h6>
+                                    <p class="info-value mb-0">yassin.space.412@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <a href="https://wa.me/201279786991" target="_blank" class="info-item d-flex align-items-center gap-3 mb-4 text-decoration-none">
+                                <div class="info-icon-box">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </div>
+                                <div>
+                                    <h6 class="info-label mb-0">WhatsApp</h6>
+                                    <p class="info-value mb-0">Contact on WhatsApp</p>
+                                </div>
+                            </a>
+
+                            <hr class="contact-divider my-4">
+
+                            <div class="social-connect mt-auto">
+                                <h6 class="info-label mb-3">Connect with me</h6>
+                                <div class="social-icons d-flex gap-3">
+                                    <a href="https://github.com/Yassin-Ahmed54" target="_blank" class="social-icon">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/yassin-ahmed-509246350?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://wa.me/201279786991" target="_blank" class="social-icon">
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-section pt-4 pb-3">
+        <div class="container">
+            <hr class="footer-divider mb-4">
+            <div class="row g-4 mb-3">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="footer-logo mb-3">Yassin Ahmed</h3>
+                    <p class="footer-desc">Building modern web experiences with passion and precision.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <h4 class="footer-title mb-3">Quick Links</h4>
+                    <div class="d-flex justify-content-center gap-5">
+                        <ul class="footer-links list-unstyled text-start">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                        </ul>
+                        <ul class="footer-links list-unstyled text-start">
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h4 class="footer-title mb-3">Follow Me</h4>
+                    <div class="social-icons d-flex gap-3">
+                        <a href="https://github.com/Yassin-Ahmed54" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yassin-ahmed-509246350?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/201279786991" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider mb-4">
+            <div class="text-center">
+                <p class="copyright-text mb-0">© 2026 Yassin Ahmed. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scroll-top-btn" id="scroll-top">
+        <i data-lucide="chevron-up"></i>
+    </a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
